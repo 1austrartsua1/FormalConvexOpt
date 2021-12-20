@@ -6,6 +6,8 @@ Few people know this, but there are growing movements to make this a possibility
 
 This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent and prove the $O(1/k)$ convergence rate. The main source for the proof is the excellent lecture notes [here](http://www.seas.ucla.edu/~vandenbe/ee236c.html). As far as I know, this is the first formalization of this proof in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
 
+The proof (as of Dec 2021) only covers functions of scalar inputs (i.e. no vectors). As a beginner to Lean, this was hard enough! I hope to extend the proofs to vector/Hilbert spaces soon. 
+
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
 Ultimately, the benefits of this project go beyond making the reviewer's life much easier and include:
