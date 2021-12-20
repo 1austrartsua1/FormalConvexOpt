@@ -18,3 +18,7 @@ Ultimately, the benefits of this project go beyond making the reviewer's life mu
 * Reveal extensions of previous proofs. 
 
 This repo is hopefully a step in this direction. There is still a long way to go. And writing proofs in Lean is really tricky! And has a steep learning curve. 
+
+## Installation
+
+For now, I only uploaded the source code in the src directory. If you want to play with this, download an empty lean project using [leanproject](https://leanprover-community.github.io/leanproject.html). Follow the instructions there for installing the leanproject command line tool and downloading an empty project with the *mathlib* library. Then, copy the source code in the **src** directory over to your new project to play around with it and see for yourself that it compiles correctly. 
