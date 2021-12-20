@@ -1,5 +1,5 @@
 /-
-This file contains the formalized proof of O(1/k) convergence of gradient descent with 
+This file contains a formal computer proof of O(1/k) convergence of gradient descent with 
 constant stepsize for convex functions of scalar-valued inputs. It is self-contained 
 other than using properties of real and natural numbers defined in mathlib.  
 I define the properties of convexity and Lipschitz continuous gradient here
