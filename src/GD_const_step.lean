@@ -6,6 +6,9 @@ I define the properties of convexity and Lipschitz continuous gradient here
 and do not rely on the mathlib-defined gradient. This means that a user 
 would have to ensure that their function is convex and the gradient is correct.
 While not ideal, this simplified the proofs. 
+
+We closely follow the proof of
+http://www.seas.ucla.edu/~vandenbe/236C/lectures/gradient.pdf
 -/
 
 import data.real.basic 
