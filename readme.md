@@ -4,13 +4,20 @@ Have you ever confronted a long proof in an optimization paper and thought: "Wel
 
 Few people know this, but there are growing movements to make this a possibility throughout the mathematical community.  This work is based on the Lean theorem prover, which has attracted significant interest from mathematicians trying to "formalize" and "mechanize" mathematical proofs. 
 
-This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent and prove the $O(1/k)$ convergence rate. The main source for the proof is the excellent lecture notes [here](http://www.seas.ucla.edu/~vandenbe/ee236c.html). As far as I know, this is the first formalization of this proof in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
+This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent with constant stepsize and (thusfar) prove
+
+1. The well-known $O(1/k)$ convergence rate. 
+2. Under strong convexity, the well-known linear convergence rate. (aka: exponential, geometric rate). 
+
+The main source for the proof are the excellent lecture notes [here](http://www.seas.ucla.edu/~vandenbe/ee236c.html). 
+
+As far as I know, this is the first formalization of these proofs in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
 
 The proof (as of Jan 1st 2022) only covers functions of scalar inputs (i.e. no vectors). As a beginner to Lean, this was hard enough! I hope to extend the proofs to vector/Hilbert spaces soon. 
 
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
-Ultimately, the benefits of this project go beyond making the reviewer's life much easier and include:
+Ultimately, the benefits of this project might go beyond making the reviewer's life much easier and include:
 
 * Making a search-able database of theorems/results/algorithms/convergence rates. 
 * Can write proof-carrying code. You can implement your algorithm in Lean and then also provide a proof that it actually does what it's supposed to do. 
