@@ -12,6 +12,18 @@ http://www.seas.ucla.edu/~vandenbe/236C/lectures/gradient.pdf
 -/
 
 import data.real.basic 
+
+-- The method under study 
+-- This is a polymorphic definition in that it works for any Type α that has
+-- a subtraction operation and a multiplication operation.
+-- This allows us to reason about behavior for the case α = ℝ but also 
+-- run it when α = float. We will only prove theorems for α = ℝ. 
+def grad_descent {α : Type}
+            [has_sub α]
+            [has_mul α]
+            (η : α) (x0 : α) (gradf : α → α): (ℕ → α) 
+| 0      := x0 
+| (n+1)  := grad_descent(n) - η*gradf(grad_descent(n))
  
 -- Definition of a convex function and it's gradient. 
 def is_convex (f: ℝ → ℝ) (gradf : ℝ → ℝ) : Prop := 
@@ -20,11 +32,6 @@ def is_convex (f: ℝ → ℝ) (gradf : ℝ → ℝ) : Prop :=
 -- (Working) Definition of Lipschitz-continuous gradient
 def is_lip_grad (f: ℝ → ℝ) (gradf : ℝ → ℝ) (L : ℝ) : Prop :=
   ∀ (x y : ℝ), f(y) ≤ f(x) + gradf(x)*(y-x) + 0.5*L*(y-x)^2 
-
--- The method under study (defined recursively)
-def grad_descent  (η x0 : ℝ) (gradf : ℝ → ℝ): (ℕ → ℝ) 
-| 0      := x0 
-| (n+1)  := grad_descent(n) - η*gradf(grad_descent(n))
 
 -- A basic descent lemma for gradient descent 
 lemma basic_grad_step (x : ℝ) (η L : ℝ) (f gradf : ℝ → ℝ) 
