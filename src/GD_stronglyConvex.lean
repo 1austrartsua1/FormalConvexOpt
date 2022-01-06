@@ -82,7 +82,7 @@ begin
   rw h8_1 at h8,
 
   have h8_2 : η*η ≤ η*(2 / (m + L)) := by exact mul_le_mul_of_nonneg_left hη_up hη_low,
-
+  
   have h8_3 : η*(2 / (m + L)) = 2 * η * 1 / (m + L) := by ring,
 
 
@@ -181,7 +181,9 @@ have h3_2 : 1 = (m + L) ^ 2 / (m + L) ^ 2 := by exact (div_self h3_1).symm,
 
 have h3_3 : 1 -  4 * m * L / (m + L) ^ 2 = (m + L) ^ 2 / (m + L) ^ 2 -  4 * m * L / (m + L) ^ 2
     := by linarith,
+
 rw h3_3 at h3,
+
 
 have h3_4 : (m + L) ^ 2 / (m + L) ^ 2 -  4 * m * L / (m + L) ^ 2
           = ((m + L) ^ 2 -  4 * m * L) / (m + L) ^ 2
