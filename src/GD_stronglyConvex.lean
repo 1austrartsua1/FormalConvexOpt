@@ -1,9 +1,11 @@
 /-
 This file contains a formal computer proof of the linear convergence of gradient descent with 
-constant stepsize for strongly-convex functions of scalar-valued inputs. It is self-contained 
-other than using properties of real and natural numbers defined in mathlib.  
-I define the properties of strong convexity and Lipschitz continuous gradient here
-and do not rely on the mathlib-defined gradient. 
+constant stepsize for strongly-convex functions. This file only covers
+functions on scalar inputs. The file "GDvec_stronglyConvex.lean" extends this
+to vectors. It is self-contained other than using properties of real and 
+natural numbers defined in mathlib. I define the properties of strong convexity
+and Lipschitz continuous gradient here and do not rely on the 
+mathlib-defined gradient. 
 
 We closely follow the proof of
 http://www.seas.ucla.edu/~vandenbe/236C/lectures/gradient.pdf
