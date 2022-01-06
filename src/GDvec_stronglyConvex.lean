@@ -15,7 +15,7 @@ import analysis.inner_product_space.pi_L2
 -- H is an inner product space over the reals
 -- It is an abstract type but [inner_product_space ℝ H] 
 -- ensures it satisfies all the properties of a real inner product space.
--- It is interesting to note that we do not need V
+-- It is interesting to note that we do not need H
 -- to be a Hilbert space. This is because, for 
 -- nonasymptotic analyses, we do not need the space
 -- to be complete as we do not take limits anywhere. 
