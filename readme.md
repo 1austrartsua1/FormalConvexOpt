@@ -2,7 +2,7 @@
 
 Have you ever confronted a long proof in an optimization paper and thought: "Well I have no idea if this is correct". Many optimization papers have proofs that are long and tedious. While the arguments can be clever, they are often obscured by pages and pages of algebraic manipulations. Wouldn't it be great if a computer could do the checking for you? How much easier would it be to review papers! You would just need to check if the paper "compiles" correctly.
 
-Few people know this, but there are growing movements to make this a possibility throughout the mathematical community.  This work is based on the Lean theorem prover, which has attracted significant interest from mathematicians trying to "formalize" and "mechanize" mathematical proofs. 
+Few people know this, but there are growing movements to make this a possibility throughout the mathematical community.  This work is based on the Lean interactive proof assistant, which has attracted significant interest from mathematicians trying to "formalize" and "computerize" mathematical proofs. 
 
 This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent with constant stepsize and (thusfar) prove
 
@@ -13,7 +13,7 @@ The main source for the proof are the excellent lecture notes [here](http://www.
 
 As far as I know, this is the first formalization of these proofs in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
 
-The proof (as of Jan 5th 2022) covers the vector-case (real inner product spaces) only for the linear convergence proof under strong convexity. The $O(1/k)$ proof is only for scalars, but I will hopefully port it to vectors shortly. 
+The proof (as of Jan 5th 2022) covers the vector-case (real inner product spaces) only for the linear convergence proof under strong convexity. The $O(1/k)$ proof is only for functions on scalars, but I will hopefully port it to vectors shortly. 
 
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
