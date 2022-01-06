@@ -13,18 +13,18 @@ The main source for the proof are the excellent lecture notes [here](http://www.
 
 As far as I know, this is the first formalization of these proofs in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
 
-The proof (as of Jan 5th 2022) covers the vector-case (real inner product spaces) only for the linear convergence proof under strong convexity. The $O(1/k)$ proof is only for functions on scalars, but I will hopefully port it to vectors shortly. 
+The proof (as of Jan 5th 2022) covers the vector-case (real inner product spaces) only for the linear convergence proof under strong convexity. The $O(1/k)$ proof is only for functions on scalars, but I will hopefully port it to vectors shortly, now that I know a bit more about how to handle vectors in Lean. 
 
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
 Ultimately, the benefits of this project might go beyond making the reviewer's life much easier and include:
 
 * Making a search-able database of theorems/results/algorithms/convergence rates. 
-* Can write proof-carrying code. You can implement your algorithm in Lean and then also provide a proof that it actually does what it's supposed to do. 
+* Can potentially write proof-carrying code. You can implement your algorithm in Lean and then also provide a proof that it actually does what it's supposed to do (modulo floating point arithmetic and other impurities). 
 * Reveal errors in previous proofs. 
 * Reveal extensions of previous proofs. 
 
-This repo is hopefully a step in this direction. There is still a long way to go. And writing proofs in Lean is really tricky! And has a steep learning curve. 
+This repo is hopefully a step in this direction. There is still a long way to go. And writing proofs in Lean is really tricky and has a steep learning curve. 
 
 ## Installation
 
