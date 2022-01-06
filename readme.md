@@ -13,7 +13,7 @@ The main source for the proof are the excellent lecture notes [here](http://www.
 
 As far as I know, this is the first formalization of these proofs in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
 
-The proof (as of Jan 1st 2022) only covers functions of scalar inputs (i.e. no vectors). As a beginner to Lean, this was hard enough! I hope to extend the proofs to vector/Hilbert spaces soon. 
+The proof (as of Jan 5th 2022) covers the vector-case (real inner product spaces) only for the linear convergence proof under strong convexity. The $O(1/k)$ proof is only for scalars, but I will hopefully port it to vectors shortly. 
 
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
