@@ -43,6 +43,7 @@ begin
   have hLip := hlip x (x-η*gradf x),
     
   rw mul_comm η (gradf x) at hLip,
+  
   have h1 : x - gradf x * η - x = - gradf x * η := by linarith,
   rw h1 at hLip,
   have h2 : 1 / 2 * L * (-gradf x * η) ^ 2 = 1 / 2 * L * (gradf x)^2 * η^2 
