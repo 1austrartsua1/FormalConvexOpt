@@ -4,7 +4,7 @@ Have you ever confronted a long proof in an optimization paper and thought: "Wel
 
 Few people know this, but there are growing movements to make this a possibility throughout the mathematical community.  This work is based on the Lean interactive proof assistant, which has attracted significant interest from mathematicians trying to "formalize" and "computerize" mathematical proofs. 
 
-This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent with constant stepsize and (thusfar) prove
+This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent with constant stepsize in a real inner product space, and (thusfar) prove
 
 1. The well-known $O(1/k)$ convergence rate. 
 2. Under strong convexity, the well-known linear convergence rate. (aka: exponential, geometric rate). 
@@ -13,7 +13,7 @@ The main source for the proof are the excellent lecture notes [here](http://www.
 
 As far as I know, this is the first formalization of these proofs in Lean and perhaps in any theorem prover. But it is totally possible someone has formalized this stuff long ago in Coq or some other framework. 
 
-The proof (as of Jan 5th 2022) covers the vector-case (real inner product spaces) only for the linear convergence proof under strong convexity. The $O(1/k)$ proof is only for functions on scalars, but I will hopefully port it to vectors shortly, now that I know a bit more about how to handle vectors in Lean. 
+The proofs are in the ```src``` directory. The ```src/old_scalr_proofs``` provides older versions of these proofs for scalars-only, for historical preservation. 
 
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
