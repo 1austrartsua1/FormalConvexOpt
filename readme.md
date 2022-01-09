@@ -28,4 +28,8 @@ This repo is hopefully a step in this direction. There is still a long way to go
 
 ## Installation
 
-For now, I only uploaded the source code in the src directory. If you want to play with this, download an empty lean project using [leanproject](https://leanprover-community.github.io/leanproject.html). Follow the instructions there for installing the leanproject command line tool and downloading an empty project with the *mathlib* library. Then, copy the source code in the **src** directory over to your new project to play around with it and see for yourself that it compiles correctly. 
+You need to download [leanproject](https://leanprover-community.github.io/leanproject.html). Follow the instructions there for installing the leanproject command line tool. Then type 
+
+```
+leanproject get https://github.com/1austrartsua1/FormalConvexOpt.git
+```
