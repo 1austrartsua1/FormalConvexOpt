@@ -17,14 +17,6 @@ The proofs are in the ```src``` directory. The ```src/old_scalr_proofs``` provid
 
 I will hopefully be updating the repo regularly as I finish new proofs - pending other commitments. 
 
-Ultimately, the benefits of this project might go beyond making the reviewer's life much easier and include:
-
-* Making a search-able database of theorems/results/algorithms/convergence rates. 
-* Can potentially write proof-carrying code. You can implement your algorithm in Lean and then also provide a proof that it actually does what it's supposed to do (modulo floating point arithmetic and other impurities). 
-* Reveal errors in previous proofs. 
-* Reveal extensions of previous proofs. 
-
-
 ## Installation
 
 You need to download [leanproject](https://leanprover-community.github.io/leanproject.html). Follow the instructions there for installing the leanproject command line tool. Then type 
@@ -34,3 +26,15 @@ leanproject get https://github.com/1austrartsua1/FormalConvexOpt.git
 ```
 
 This will download the repo and use the ```.toml``` file to get the right version of ```mathlib```, which is the math library of Lean. 
+
+## Reasons to Learn Lean
+
+The benefits of this project might go beyond making the reviewer's life much easier and include:
+
+* Making a search-able database of theorems/results/algorithms/convergence rates. 
+* Can potentially write proof-carrying code. You can implement your algorithm in Lean and then also provide a proof that it actually does what it's supposed to do (modulo floating point arithmetic and other impurities). 
+* Reveal errors in previous proofs. 
+* Reveal extensions of previous proofs. 
+* Allow training/developing AI models that can fully automate theorem proving. 
+
+But ultimately, the most important reason is it’s fun! It is the pure intersection of math and programming! Have you ever written up a proof and thought, "well this feels like coding". There are variables, statements, functions with inputs. Each line follows from the previous according to fixed and precise rules. There are even imports: you “import” theorems from other papers, you refer to basic properties of real numbers, vector spaces, you “import” the Cauchy-Schwarz inequality. Math is programming, you just don’t know it. And as these tools become more usable, this may just be the future. 
