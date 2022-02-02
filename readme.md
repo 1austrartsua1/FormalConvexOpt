@@ -1,8 +1,8 @@
 # Formal Convex Opt
 
-Have you ever tried to tackle long proof in an optimization/ML paper and thought: "Well I have no idea if this is correct". Many optimization papers have proofs that are long and tedious. While the arguments can be clever, they are often obscured by pages and pages of algebraic manipulations. Wouldn't it be great if a computer could do the checking for you? How much easier would it be to review papers! You would just need to check if the paper "compiles" correctly.
+Have you ever tried to tackle a long proof in an optimization/ML paper and thought: "Well I have no idea if this is correct". Many optimization papers have proofs that are long and quite tedious. While the arguments can be clever, they are often obscured by pages and pages of algebraic manipulations. Wouldn't it be great if a computer could do the checking for you? How much easier would it be to review papers! You would just need to check if the paper "compiles" correctly.
 
-Few people know this, but there is a growing movement to make this the norm throughout the mathematical community.  This repo is based on the Lean interactive proof assistant, which has attracted significant interest from mathematicians trying to "formalize" and "computerize" mathematical proofs. 
+Few people know this, but there is a growing movement to make this the norm throughout the mathematical community.  This repo is based on the Lean interactive theorem prover, which has attracted significant interest from mathematicians trying to "formalize", "digitize", and "computerize" mathematical proofs. 
 
 This repo is an attempt to formalize in Lean some basic convex optimization algorithm proofs. I focus on gradient descent with constant stepsize in a real inner product space, and (thusfar) prove
 
@@ -37,4 +37,4 @@ The benefits of this project might go beyond making the reviewer's life much eas
 * Reveal extensions of previous proofs. 
 * Allow training/developing AI models that can fully automate theorem proving. 
 
-But ultimately, the most important reason is it’s fun! It is the pure intersection of math and programming! Have you ever written up a proof and thought, "well this feels like coding". There are variables, statements, functions with inputs. Each line follows from the previous according to fixed and precise rules. There are even imports: you “import” theorems from other papers, you refer to basic properties of real numbers, vector spaces, you “import” the Cauchy-Schwarz inequality. Math is programming, you just don’t know it. And as these tools become more usable, this may just be the future. 
+But ultimately, the most important reason is it’s fun! It is the pure intersection of math and programming! Have you ever written up a proof and thought, "well this feels like coding". There are variables, statements, functions with inputs. Each line follows from the previous according to fixed and precise rules. There are even imports: you "import" theorems from other papers, you refer to basic properties of real numbers, vector spaces, you "import" the Cauchy-Schwarz inequality. Math is programming, you just don’t know it. And as these tools become more usable, this may just be the future. 
