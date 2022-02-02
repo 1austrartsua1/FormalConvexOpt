@@ -1,3 +1,14 @@
+/-
+This file contains a formal computer proof of O(1/k) convergence of gradient descent with 
+constant stepsize for convex functions on a real inner-product space. It is self-contained other than using properties of real and natural numbers defined in mathlib.  
+I define the properties of convexity and Lipschitz continuous gradient here
+and do not rely on the mathlib-defined gradient. This means that a user 
+would have to ensure that their function is convex and the gradient is correct.
+While not ideal, this simplified the proofs. 
+We closely follow the proof of
+http://www.seas.ucla.edu/~vandenbe/236C/lectures/gradient.pdf
+-/
+
 import data.real.basic 
 import analysis.inner_product_space.pi_L2
 
